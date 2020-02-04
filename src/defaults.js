@@ -17,10 +17,9 @@ Selectize.defaults = {
 	maxItems: null,
 	hideSelected: null,
 	addPrecedence: false,
-  selectOnTab: true,
+	selectOnTab: true,
 	preload: false,
 	allowEmptyOption: false,
-	closeAfterSelect: false,
 
 	scrollDuration: 60,
 	loadThrottle: 300,
@@ -29,14 +28,12 @@ Selectize.defaults = {
 	dataAttr: 'data-data',
 	optgroupField: 'optgroup',
 	valueField: 'value',
-	labelField: 'text',
 	disabledField: 'disabled',
 	optgroupLabelField: 'label',
 	optgroupValueField: 'value',
 	lockOptgroupOrder: false,
 
 	sortField: '$order',
-	searchField: ['text'],
 	searchConjunction: 'and',
 
 	mode: null,
@@ -47,12 +44,11 @@ Selectize.defaults = {
 
 	dropdownParent: null,
 
-  copyClassesToDropdown: true,
-  stopBackspaceDelete: true,
-  ignoreHover: true,
-  noTyping: true,
-  copyClassesToDropdown: false,
-  closeAfterSelect: true,
+	stopBackspaceDelete: true,
+	ignoreHover: true,
+	noTyping: true,
+	copyClassesToDropdown: false,
+	closeAfterSelect: true,
 	labelField: 'label',
 	searchField: 'label',
 
@@ -86,10 +82,10 @@ Selectize.defaults = {
 		option_create: null
     */
 
-    item: function(item, escape) {
-      const shortName = item.label.split(',')[0];
+		item: function (item, escape) {
+			const shortName = item.label.split(',')[0];
 
-      return '<div title="' + (shortName !== item.label ? item.label : '') + '">' + escape(shortName) + '</div>';
-    }
+			return '<div title="' + (shortName !== item.label ? item.label : '') + '">' + escape(shortName) + '</div>';
+		}
 	}
 };
